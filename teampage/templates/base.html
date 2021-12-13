@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>{% block title %}{% endblock title %}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark shadow py-1 px-5" style="position:sticky;top:0;background-color:transparent;z-index:1">
+
+        <a class="navbar-brand text-white" href="/">
+            <img src="https://recursionnitd.in/static/image/logoInverted.png" alt="" width="45" height="35" class="d-inline-block align-text-top">
+            <b>RECursion</b>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+          
+              <li class="nav-item active ml-3">
+                  <a class="nav-link" href="{% url 'login' %} " style="color:	rgb(176,176,176);font-size:18px">
+                      AskREC <span class="sr-only">(current)</span></a>
+              </li>
+  
+              <li class="nav-item active ml-3">
+                  <a class="nav-link" href="{% url 'register' %}" style="color:	rgb(176,176,176);font-size:18px">
+                      Blog <span class="sr-only">(current)</span></a>
+              </li>
+  
+              <li class="nav-item active ml-3">
+                <a class="nav-link" href="{% url 'login' %}" style="color:	rgb(176,176,176);font-size:18px">
+                    Interview Experiences <span class="sr-only">(current)</span></a>
+            </li>
+  
+            <li class="nav-item active ml-3">
+              <a class="nav-link" href="{% url 'login' %}" style="color:	rgb(176,176,176);font-size:18px">
+                  Events <span class="sr-only">(current)</span></a>
+          </li>
+    
+  
+          <li class="nav-item active ml-3">
+            <a class="nav-link" href="{% url 'login' %}" style="color:	rgb(176,176,176);font-size:18px">
+                Get Started <span class="sr-only">(current)</span></a>
+        </li>
+  
+        <li class="nav-item active ml-3">
+          <a class="nav-link" href="/" style="color:	rgb(176,176,176);font-size:18px" >
+              Team <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'login' %}" style="color:	rgb(176,176,176);font-size:18px">
+            Login <span class="sr-only">(current)</span></a>
+      </li>
+            </ul>
+          </div>
+          
+        </nav>
+
+      {% block body %} {% endblock body %}
+
+            <!-- Footer -->
+<footer class="section footer-classic context-dark bg-image" style="background:linear-gradient(135deg, #3e4446 22%, rgba(225,0,0,0) 10%), linear-gradient(135deg, #2d3436 90%, #3e4446 1% ),linear-gradient(45deg,#353b48 95%, rgba(0,0,225,0) 30%)">
+
+  
+
+    <!-- Footer Links -->
+    <br>
+    <div class="container text-center text-md-left mt-5"style="color:	rgb(245,245,245)">
+      
+  
+      <!-- Grid row -->
+      <div class="row mt-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Contribute to this community <a href="https://github.com/RECursion-NITD">GitHub</a><br> Developed & designed with  by Web Team '18-19</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>©  2021 RECursion. All Rights Reserved</p>    <a href="https://www.recursionnitd.in/" style="color:	rgb(245,245,245)"> RECursion.com</a>
+  
+  
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+  
+          <!-- Links -->
+          <h4 class="text-uppercase font-weight-bold" style="color:rgb(192,192,192)">Contact</h4>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          <p>
+            <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+  
+        </div>
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+  
+          <!-- Links -->
+          <h4 class="text-uppercase font-weight-bold" style="color:rgb(192,192,192)">Links</h4>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="/login" style="color:	rgb(245,245,245)">Your Account</a>
+          </p>
+          <p>
+            <a href="#!" style="color:	rgb(245,245,245)">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!" style="color:	rgb(245,245,245)">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!" style="color:	rgb(245,245,245)">Help</a>
+          </p>
+  
+        </div>
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+  </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
